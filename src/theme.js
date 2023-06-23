@@ -5,7 +5,7 @@ import { createTheme } from "@mui/material";
 export const tokens = (mode) => ({
   ...(mode === "dark"
     ? {
-        gray: {
+        grey: {
           100: "#e0e0e0",
           200: "#c2c2c2",
           300: "#a3a3a3",
@@ -20,7 +20,7 @@ export const tokens = (mode) => ({
           100: "#d0d1d5",
           200: "#a1a4ab",
           300: "#727681",
-          400: "#434957",
+          400: "#1F2A40",
           500: "#141b2d",
           600: "#101624",
           700: "#0c101b",
@@ -50,19 +50,19 @@ export const tokens = (mode) => ({
           900: "#2c100f",
         },
         blueAccent: {
-          100: "#e1e4fe",
-          200: "#c3c9fd",
-          300: "#a4affc",
-          400: "#8694fb",
-          500: "#6879fa",
-          600: "#5361c8",
-          700: "#3e4996",
-          800: "#2a3064",
-          900: "#151832",
+          100: "#e1e2fe",
+          200: "#c3c6fd",
+          300: "#a4a9fc",
+          400: "#868dfb",
+          500: "#6870fa",
+          600: "#535ac8",
+          700: "#3e4396",
+          800: "#2a2d64",
+          900: "#151632",
         },
       }
     : {
-        gray: {
+        grey: {
           100: "#141414",
           200: "#292929",
           300: "#3d3d3d",
@@ -77,9 +77,9 @@ export const tokens = (mode) => ({
           100: "#040509",
           200: "#080b12",
           300: "#0c101b",
-          400: "#101624",
+          400: "#f2f0f0", // manually changed
           500: "#141b2d",
-          600: "#434957",
+          600: "#1F2A40",
           700: "#727681",
           800: "#a1a4ab",
           900: "#d0d1d5",
@@ -107,15 +107,15 @@ export const tokens = (mode) => ({
           900: "#f8dcdb",
         },
         blueAccent: {
-          100: "#151832",
-          200: "#2a3064",
-          300: "#3e4996",
-          400: "#5361c8",
-          500: "#6879fa",
-          600: "#8694fb",
-          700: "#a4affc",
-          800: "#c3c9fd",
-          900: "#e1e4fe",
+          100: "#151632",
+          200: "#2a2d64",
+          300: "#3e4396",
+          400: "#535ac8",
+          500: "#6870fa",
+          600: "#868dfb",
+          700: "#a4a9fc",
+          800: "#c3c6fd",
+          900: "#e1e2fe",
         },
       }),
 });
@@ -136,9 +136,9 @@ export const themeSettings = (mode) => {
               main: colors.greenAccent[500],
             },
             neutral: {
-              dark: colors.gray[700],
-              main: colors.gray[500],
-              light: colors.gray[100],
+              dark: colors.grey[700],
+              main: colors.grey[500],
+              light: colors.grey[100],
             },
             background: {
               default: colors.primary[500],
@@ -152,9 +152,9 @@ export const themeSettings = (mode) => {
               main: colors.greenAccent[500],
             },
             neutral: {
-              dark: colors.gray[700],
-              main: colors.gray[500],
-              light: colors.gray[100],
+              dark: colors.grey[700],
+              main: colors.grey[500],
+              light: colors.grey[100],
             },
             background: {
               default: "#fcfcfc",
